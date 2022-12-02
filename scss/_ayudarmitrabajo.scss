@@ -1,0 +1,85 @@
+.donaciones{
+    padding-right: 200px;
+    padding-left: 200px;
+    margin: 100px;
+    p{
+        font-size: 20px;
+    }
+}
+
+/* enterate de más */
+
+.container-ayudar{
+    .container-ayudar__ig{
+        display: flex;
+        transform: rotate(-90deg);
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -50px;
+        img{
+            width: 50px;
+            margin-left: 50px;
+        }
+    }
+    .container-ayudar__linea{
+        margin-top: 100px;
+        img{
+            width: 300px;
+        }
+        }     
+        .container-como{
+            margin-left: 200px;
+            margin-top: -170px;
+        }
+        .container-ayuda-img{
+            margin-top: -200px;
+            margin-left: 530px;
+            img{
+                width: 900px;
+                border-radius: 10px;
+                filter: drop-shadow(10px 10px 5px black);
+            }
+        }      
+}
+/* fin de la sección */
+
+/* Información */
+
+.container-informacion{
+    text-align: center;
+    margin-top: 100px;
+    margin: 100px;
+    padding: 100px;
+    img{
+        margin: 20px;
+        border-radius: 10px;
+     }
+}
+
+.container-redes{
+    margin-left: 100px;
+    img{
+        width: 100px;
+        margin: 20px;
+    }
+    p{
+        display: inline-block;
+    }
+}
+
+.div-de-linea{
+    margin-top: -420px;
+    margin-left: 750px;
+}
+
+.container-donaciones{
+    margin-left: 850px;
+    margin-top: -400px;
+    img{
+        width: 200px;
+        display: block;
+       }
+}
+
+/* fin de información */
+

@@ -1,0 +1,13 @@
+@mixin medidas ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+@mixin nav {
+    margin-left: -65px;
+    margin-right: -64px;
+    padding-top: -50px;
+    background-color: pink;
+    height: 90px;
+}

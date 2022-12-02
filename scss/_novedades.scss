@@ -1,0 +1,306 @@
+/* sección novedades */
+
+.container-novedades{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    gap: 50px;
+    .container-novedades__div{
+        img{
+            width: 200px;
+        }
+       }
+}
+
+/* Media Queris */
+
+/* celular */
+@media (min-width: 400px){ 
+    /* "Me presento" */
+    header{
+       display: none;
+    }
+
+    .titulo__div h1{
+        margin-left: 500px;
+    }
+
+
+    /*---*/
+
+    /* "Consultas" */
+
+    .img-dec{
+        margin-left: 30px;
+        width: 480px;
+    }
+
+    .container-carts{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .div-container-pagos{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .div-container-avisos{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*---*/
+
+    /* "Tienda" */
+
+    #kiko-slider{
+        display: none;
+    }
+
+    .testimonials-container-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 50px;
+    }
+
+    /*---*/
+
+    /* "¿Cómo apoyar mi trabajo? */
+
+    .container-ayudar{
+        display: none;
+    }
+
+    .container-ayudar-mobile{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-ayudar-mobile img{
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .container-informacion img{
+        margin-left: -190px;
+        width: 500px;
+    }
+
+    .container-informacion p{
+          margin-right: -120px;
+          margin-left: -120px;
+    }
+
+    .container-redes{
+        display: none;
+    }
+
+    .div-de-linea{
+        display: none;
+    }
+
+    .container-donaciones{
+        display: none;
+    }
+
+    .container-redes-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-redes-mobile img{
+        width: 100px;
+    }
+
+    .div-de-linea-horizontal img{
+        width: 500px;
+    }
+    .container-donaciones-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* "Novedades" */
+
+    .container-novedades{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: auto;
+    }
+
+}
+
+/* Tablet */
+
+@media (min-width:720px) {
+
+    /* "Me presento */
+
+
+    .titulo__div h1{
+       margin: 100px;
+    }
+
+    .blog img{
+        display: inline;
+        float: right;
+        width: 300px;
+        margin: 10px;
+    }
+
+    .blog .carta{
+        width: 400px;
+    }
+
+    /*----*/
+
+    /* "Novedades" */
+
+    .container-novedades{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: auto;
+    }
+
+    /*------*/
+
+    /* "Consultas" */
+
+    .img-dec{
+        margin-left: 250px;
+    }
+
+    .div-container-avisos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*-----*/
+
+    /* "¿Cómo ayudar mi trabajo"? */
+
+    .container-informacion img{
+        margin: auto;
+    }
+
+    /*------*/
+    
+}
+
+
+
+/* PC */
+
+@media (min-width: 1200px) {
+
+    /* "Me presento" */
+
+   header{
+    display: block;
+   }
+
+    .titulo__div h1{
+        margin-left: 10px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container_noticias{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*----*/
+
+    /* "Novedades" */
+
+    .container-novedades{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: auto;
+    }
+
+    /*------*/
+
+    /* "Consultas" */
+
+    .img-dec{
+        margin-left: 350px;
+        width: 700px;
+    }
+
+    .container-carts{
+        flex-wrap: nowrap;
+        gap: 1px;
+    }
+
+    .div-container-avisos{
+        flex-wrap: nowrap;
+    }
+
+    /*----*/
+
+    /* "Tienda" */
+
+    .testimonials-container-mobile{
+        display: none;
+    }
+
+    #kiko-slider{
+        display: block;
+    }
+
+    /*------*/
+
+    /* "¿Cómo apoyar mi trabajo" */
+
+    .container-ayudar-mobile{
+        display: none;
+    }
+
+    .container-ayudar{
+        display: block;
+    }
+
+    .container-informacion img{
+        width: 700px;
+        margin: auto;
+    }
+
+    .container-redes-mobile{
+        display: none;
+    }
+
+    .container-redes{
+        display: block;
+    }
+
+    .div-de-linea{
+        display: block;
+    }
+
+    .container-donaciones{
+        display: block;
+    }
+
+    /*-----*/
+
+}
