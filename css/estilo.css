@@ -7,7 +7,8 @@
   opacity: 0.9;
   padding: 10px;
   height: 100px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-top: -500px; }
 
 /* Img de consultas */
 .img-dec {
@@ -406,16 +407,25 @@ ul {
 
 /* Media Queris */
 /* celular */
-@media (min-width: 400px) {
+@media (min-width: 380px) {
   /* "Me presento" */
   header {
     display: none; }
   .titulo__div h1 {
     margin-left: 500px; }
+  #carouselExampleFade {
+    display: none; }
+  .container-noticias {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; }
   /*---*/
   /* "Consultas" */
   .img-dec {
-    margin-left: 30px;
+    margin-left: 10px;
     width: 480px; }
   .container-carts {
     flex-wrap: wrap;
@@ -437,6 +447,8 @@ ul {
     justify-content: center;
     gap: 10px;
     padding: 50px; }
+  #carouselExampleControls {
+    display: none; }
   /*---*/
   /* "¿Cómo apoyar mi trabajo? */
   .container-ayudar {
@@ -450,11 +462,11 @@ ul {
     width: 500px;
     border-radius: 10px; }
   .container-informacion img {
-    margin-left: -190px;
+    margin-left: -200px;
     width: 500px; }
   .container-informacion p {
-    margin-right: -120px;
-    margin-left: -120px; }
+    margin-right: -200px;
+    margin-left: -200px; }
   .container-redes {
     display: none; }
   .div-de-linea {
@@ -525,6 +537,14 @@ ul {
   .container_noticias {
     display: flex;
     flex-direction: column; }
+  #carouselExampleFade {
+    display: block; }
+  .container-noticias {
+    padding: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
   /*----*/
   /* "Novedades" */
   .container-novedades {
@@ -546,6 +566,8 @@ ul {
   .testimonials-container-mobile {
     display: none; }
   #kiko-slider {
+    display: block; }
+  #carouselExampleControls {
     display: block; }
   /*------*/
   /* "¿Cómo apoyar mi trabajo" */
@@ -612,10 +634,12 @@ header {
       header .menu .menu_nav a {
         margin: 10px;
         text-decoration: none;
-        color: black; }
+        color: black;
+        transition: .5s; }
       header .menu .menu_nav a:hover {
         color: white;
-        transition: .5s; }
+        transition: .5s;
+        transform: scale(1.1); }
 
 /* fin de menu de navegación */
 /* TITULO */
@@ -648,8 +672,7 @@ header {
 .container-noticias {
   padding: 100px;
   margin-top: 100px;
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   .container-noticias .container-noticias_noticia {
     padding: 10px; }
     .container-noticias .container-noticias_noticia img {
