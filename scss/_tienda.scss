@@ -1,23 +1,16 @@
 /* slider boostrap */
-
 .carousel-item img{
     margin-top: 50px;
     width: 100%;
     height: 40rem;
 }
-
 /* fin de slider boostrap */
-
 /* compra, titulo */
-
 .compra{
     text-align: center;
 }
-
 /*---*/
-
 /* "Tienda". Productos */
-
 .container-productos{
     display: flex;
     justify-content: space-around;
@@ -41,13 +34,10 @@
         }
     }
 }
-
 /* slider testimonials */
-
 .testimonials{
     text-align: center;
  }
-
  #kiko-slider{
     font-family: sans-serif;
     margin: auto;
@@ -127,23 +117,18 @@
           }
       }
   }
-
   /* fin de slider testimonials */
-
   /* Formulario de contacto */
-
   .container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
 }
-
 ul {
     list-style: none;
     padding: 0;
 }
-
 .logo {
     text-align: center;
     font-size: 3em;
@@ -151,14 +136,12 @@ ul {
         color: #B70E21;
     }    
 }
-
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
     * {
         padding: 1em;
     }
 }
-
 .contact-form {
     background: #222222;
     color: white;
@@ -221,9 +204,7 @@ ul {
             outline: 0;
         }
     }
-
 }
-
 .contact-info {
     background: #000;
     color: white;
@@ -240,7 +221,6 @@ ul {
     margin: 0 0 1rem 0;
     }
 }
-
 @media(min-width: 700px) {
     body {
         padding: 0 4em;
@@ -258,7 +238,6 @@ ul {
         text-align: left;
     }
 }
-
 /* fin del formulario de contacto */
 
 

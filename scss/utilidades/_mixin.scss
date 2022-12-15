@@ -2,11 +2,9 @@
     width: $ancho;
     height: $alto;
 }
-
-
 @mixin nav {
-    margin-left: -65px;
-    margin-right: -64px;
+    margin-left: -64px;
+    margin-right: -62px;
     padding-top: -50px;
     background-color: pink;
     height: 90px;

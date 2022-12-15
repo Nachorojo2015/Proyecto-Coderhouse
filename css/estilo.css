@@ -46,7 +46,7 @@
     animation-iteration-count: 3; }
 
 .reglas {
-  padding: 70px;
+  justify-content: center;
   text-align: center;
   align-items: center;
   display: flex;
@@ -69,12 +69,12 @@
 /* fin de reglas */
 /* Pasos */
 .div-container-pasos {
+  margin-top: 15px;
   text-align: center; }
 
 /* fin de pasos */
 /* Pasos para la consulta */
 .div-container-seguimiento {
-  padding-top: 10px;
   text-align: center;
   border: 10px outset purple; }
 
@@ -82,8 +82,7 @@
 /* Pagos/Abonar */
 .div-container-sistema {
   text-align: center;
-  padding: 50px;
-  margin-top: 100px; }
+  margin-top: 50px; }
 
 .div-container-pagos {
   margin-top: 50px;
@@ -110,13 +109,10 @@
 .div-container-avisos {
   display: flex;
   align-items: center;
-  padding: 70px; }
-  .div-container-avisos p {
-    display: inline;
-    margin: 10px; }
+  margin-top: 100px;
+  justify-content: center; }
   .div-container-avisos img {
-    width: 100px;
-    margin: 10px; }
+    width: 100px; }
 
 /* fin de avisos */
 .donaciones {
@@ -407,36 +403,30 @@ ul {
 
 /* Media Queris */
 /* celular */
-@media (min-width: 380px) {
+@media (min-width: 400px) {
   /* "Me presento" */
   header {
     display: none; }
-  .titulo__div h1 {
-    margin-left: 500px; }
   #carouselExampleFade {
     display: none; }
   .container-noticias {
-    margin-top: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center; }
+    text-align: center;
+    align-items: center; }
+  .mas {
+    display: none; }
   /*---*/
   /* "Consultas" */
-  .img-dec {
-    margin-left: 10px;
-    width: 480px; }
   .container-carts {
     flex-wrap: wrap;
-    gap: 10px; }
+    gap: 20px;
+    display: flex;
+    justify-content: space-between; }
   .div-container-pagos {
     flex-wrap: wrap;
     gap: 15px; }
-  .div-container-avisos {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center; }
   /*---*/
   /* "Tienda" */
   #kiko-slider {
@@ -457,16 +447,26 @@ ul {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
   .container-ayudar-mobile img {
+    justify-content: center;
+    align-items: center;
     width: 500px;
     border-radius: 10px; }
-  .container-informacion img {
-    margin-left: -200px;
-    width: 500px; }
+  .container-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .container-informacion p {
-    margin-right: -200px;
-    margin-left: -200px; }
+    text-align: center; }
+  .container-informacion img {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto; }
   .container-redes {
     display: none; }
   .div-de-linea {
@@ -494,27 +494,11 @@ ul {
     grid-template-rows: auto; } }
 
 /* Tablet */
-@media (min-width: 720px) {
-  /* "Me presento */
-  .titulo__div h1 {
-    margin: 100px; }
-  .blog img {
-    display: inline;
-    float: right;
-    width: 300px;
-    margin: 10px; }
-  .blog .carta {
-    width: 400px; }
-  /*----*/
-  /* "Novedades" */
-  .container-novedades {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: auto; }
+@media (min-width: 820px) {
+  .mas {
+    display: none; }
   /*------*/
   /* "Consultas" */
-  .img-dec {
-    margin-left: 250px; }
   .div-container-avisos {
     display: flex;
     flex-direction: column;
@@ -545,6 +529,8 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between; }
+  .mas {
+    display: block; }
   /*----*/
   /* "Novedades" */
   .container-novedades {
@@ -553,14 +539,9 @@ ul {
     grid-template-rows: auto; }
   /*------*/
   /* "Consultas" */
-  .img-dec {
-    margin-left: 350px;
-    width: 700px; }
   .container-carts {
     flex-wrap: nowrap;
     gap: 1px; }
-  .div-container-avisos {
-    flex-wrap: nowrap; }
   /*----*/
   /* "Tienda" */
   .testimonials-container-mobile {
@@ -609,8 +590,8 @@ ul {
 /* fin de logo */
 /* Menu de navegación */
 header {
-  margin-left: -65px;
-  margin-right: -64px;
+  margin-left: -64px;
+  margin-right: -62px;
   padding-top: -50px;
   background-color: pink;
   height: 90px; }
@@ -652,8 +633,6 @@ header {
 /* section */
 .titulo {
   margin-top: 50px;
-  margin-left: -65px;
-  margin-right: -64px;
   position: relative; }
   .titulo img {
     width: 100%;
@@ -676,9 +655,8 @@ header {
   .container-noticias .container-noticias_noticia {
     padding: 10px; }
     .container-noticias .container-noticias_noticia img {
-      width: 380px;
-      border-radius: 5px;
-      height: 380px; }
+      width: 100%;
+      height: 50%; }
     .container-noticias .container-noticias_noticia img:hover {
       opacity: 0.5;
       transition: .5s; }
@@ -690,7 +668,8 @@ header {
     .container-noticias .container-noticias_noticia span {
       margin-left: 190px;
       cursor: pointer;
-      color: red; }
+      color: red;
+      text-align: center; }
 
 .container-astrologico {
   width: 200px;

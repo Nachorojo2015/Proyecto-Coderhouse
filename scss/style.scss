@@ -6,23 +6,15 @@
 @import "tienda.scss";
 @import "novedades.scss";
 @import "utilidades/variables.scss";
-
-
-
-
 /* Reset */
-
 *{
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 /* fin de reset */
-
 /* LOGO */
-
 .logo-cont{
     margin-top: 30px;
     margin-bottom: 20px;
@@ -33,9 +25,7 @@
         border-radius: 10%;
     }
 }
-
 /* fin de logo */
-
 /* Menu de navegación */
 header{
    @include nav;
@@ -75,25 +65,17 @@ header{
         }
     }
 }
-
-
 /* fin de menu de navegación */
-
 /* TITULO */
-
 #carouselExampleFade{
     margin-top: 50px;
     width: 1520px;
     margin-left: -65px;
 }
-
 /* fin de titulo */
-
 /* section */
 .titulo{
     margin-top: 50px;
-    margin-left: -65px;
-    margin-right: -64px;
     position: relative;
     img{
         @include medidas (100%, 300px)
@@ -109,7 +91,6 @@ header{
         padding: 10px;
     }
 }
-
 /* Main del index */
 .container-noticias{
     padding: 100px;
@@ -118,9 +99,8 @@ header{
     .container-noticias_noticia{
         padding: 10px;
         img{
-            width: 380px;
-            border-radius: 5px;
-            height: 380px;
+            width: 100%;
+            height: 50%;
         }
         img:hover{
             opacity: 0.5;
@@ -137,23 +117,19 @@ header{
             margin-left: 190px;
             cursor: pointer;
             color: red;
+            text-align: center;
         }
     }
 }
-
 .mas{
    @extend %diseñoVerMas;
 }
-
 .container-astrologico{
     width: 200px;
     transform: translate(-650px, 900px);
 }
-
 /* fin del main del index */
-
 /* footer */
-
 footer{
     justify-content: center;
     display: flex;
@@ -166,7 +142,6 @@ footer{
         width: 100px;
     }
 }
-
 .terminos{
     text-align: center;
     margin: 30px;
@@ -178,6 +153,5 @@ footer{
         transition: all 0.5s;
     }    
 }
-
 /* fin del footer */
 

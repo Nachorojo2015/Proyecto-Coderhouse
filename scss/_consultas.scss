@@ -1,25 +1,18 @@
 /* Img de consultas */
-
 .img-dec{
     margin-top: 50px;
     margin-left: 360px;
 }
-
 /* fin de img */
-
 /* Div consultas */
-
 .div-container-consultas{
     text-align: center;
     font-size: 20px;
     padding: 50px;
     margin-top: 20px;
 }
-
 /* Fin de consultas */
-
 /* Cartas de consultas */
-
 .container-carts{
     display: flex;
     justify-content: space-around;
@@ -32,11 +25,8 @@
         transition: 0.5s;
     }
 }
-
 /* fin de las cartas */
-
 /* REGLAS */
-
 .requisitos{
     margin-top: 100px;
     .requisitos__h2{
@@ -46,9 +36,8 @@
         animation-iteration-count: 3;
     }    
 }
-
 .reglas{
-    padding: 70px;
+    justify-content: center;
 text-align: center;
 align-items: center;
   display: flex;
@@ -63,48 +52,32 @@ align-items: center;
     margin: 20px;
 }
 }
-
 @keyframes girar {
-    
     0%{
         transform: scale(1);
-
     }
-
     50%{
         transform: scale(1.1);
     }
-    
 }
-
 /* fin de reglas */
-
 /* Pasos */
-
 .div-container-pasos{
+    margin-top: 15px;
     text-align: center;
 }
-
 /* fin de pasos */
-
 /* Pasos para la consulta */
-
 .div-container-seguimiento{
-    padding-top: 10px;
     text-align: center;
     border: 10px outset purple;
 }
-
 /* fin de seguimiento de pasos */
-
 /* Pagos/Abonar */
-
 .div-container-sistema{
     text-align: center;
-    padding: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
 .div-container-pagos{
     margin-top: 50px;
     text-align: center;
@@ -128,25 +101,20 @@ align-items: center;
         text-decoration: none;
     }
 }
-
 /*fin de pagos */
-
 /* Avisos */
-
 .div-container-avisos{
     display: flex;
     align-items: center;
-    padding: 70px;
+    margin-top: 100px;
+    justify-content: center;
     p{
-        display: inline;
-        margin: 10px;
+        
     }
     img{
         width: 100px;
-        margin: 10px;
     }
 }
-
 /* fin de avisos */
 
 
